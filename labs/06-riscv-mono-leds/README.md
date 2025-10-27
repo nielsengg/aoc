@@ -1,6 +1,6 @@
 # Testando seu RISC-V monociclo na placa
 
-O objetivo desta prática é testar diretamente no kit de FPGA [o processador que você desenvolveu na simulação](../../sim/05-riscv-mono/) desta semana. Para isso, foi implementado externamente (no SoC[^1]) um esquema de E/S mapeados em memória. Para possibilitar o monociclo, separamos as memórias de instruções e de dados:
+O objetivo desta prática é testar diretamente no kit de FPGA [o processador que você desenvolveu na simulação](https://github.com/DC-UFSCar/riscv-mono) desta semana. Para isso, foi implementado externamente (no SoC[^1]) um esquema de E/S mapeados em memória. Para possibilitar o monociclo, separamos as memórias de instruções e de dados:
 
 ```verilog
   // microprocessor
@@ -39,5 +39,4 @@ O esquema de E/S mapeado em memória é apresentado a seguir:
   end
 ``` 
 
-
-[^1] SoC significa *System on Chip*. No contexto deste projeto ele se refere ao arquivo *top level* para síntese, que contém a CPU, memórias de instruções e de dados, além dos periféricos, neste caso os LEDs e *displays* de sete segmentos. 
+[^1]: SoC significa *System on Chip*. No contexto deste projeto ele se refere ao arquivo *top level* para síntese, que contém a CPU, memórias de instruções e de dados, além dos periféricos, neste caso os LEDs e *displays* de sete segmentos. 
